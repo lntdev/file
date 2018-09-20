@@ -1,0 +1,19 @@
+dpkg -l '*sawtooth*'
+  
+
+  add repo
+
+  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 44FC67F19B2466EA
+ 
+  sudo vim /etc/apt/sources.list –remove sawtooth list
+rm -rf /etc/apt/sawtooth list.d/sawtoothlake
+
+  sudo apt-add-repository "deb http://repo.sawtooth.me/ubuntu/bumper/nightly xenial universe"
+  sudo apt-get update
+  sudo apt-get install python3-sawtooth-cli 
+if not installing try to remove sawadm
+
+  cd /var/lib/dpkg/info
+  rm -rf sawadm.*
+
+ sudo apt-get install python3-sawtooth-cli 
